@@ -3,67 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Simulator Update</title>
+    <title>Anime Simulator Update 1</title>
     <style>
-        body, h1, h2, ul, li {
-            margin: 0;
-            padding: 0;
-        }
-
-        
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             text-align: center;
+            margin: 0;
             padding: 20px;
         }
 
-        
         nav {
             background: #333;
-            padding: 10px 0;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 15px;
-            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
         }
 
         nav a:hover {
             background: #555;
         }
 
-        
-        @media (max-width: 600px) {
-            nav {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            nav a {
-                display: block;
-                width: 100%;
-                text-align: center;
-            }
-        }
-
-        
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 30px auto;
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
 
-        h1, h2 {
-            color: #333;
+        h1 {
+            color: #222;
             margin-bottom: 15px;
+            font-size: 2rem;
             text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            border-bottom: 2px solid #ff4500;
+            padding-bottom: 5px;
         }
 
         ul {
@@ -73,16 +66,28 @@
 
         li {
             background: #fff;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
         }
 
-        
+        li strong {
+            color: #e03d00;
+        }
+
         @media (max-width: 600px) {
-            li {
-                font-size: 14px;
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 10px;
             }
         }
     </style>
@@ -100,28 +105,58 @@
     <div class="container">
         <h1>Anime Simulator Update 1</h1>
         
-        <h2>References</h2>
+        <h2>Character References</h2>
+        <p>This update introduces various characters from popular anime series. Below is a list of characters and their anime origins:</p>
+
+        <h2>Dragon Ball</h2>
         <ul>
-            <li><strong>Gogo</strong> (Goku), <strong>Veggies</strong> (Vegeta), <strong>Brobro</strong> (Broly), <strong>Baybe</strong> (??) and <strong>Super Baybe</strong> (SS Goku) are from the anime "Dragon Ball".</li>
-            <li><strong>Sausage</strong> (Sasuke), <strong>Naru</strong> (Naruto), <strong>Nejo</strong> (Neji), <strong>Saka</strong> (Sakura), <strong>Mino</strong> (Minato), <strong>Lee</strong> (Rock Lee), <strong>Martha</strong> (Madara) are from the anime "Naruto".</li>
-            <li><strong>Nasa</strong> (Natsu Dragneel) is from the anime "Fairy Tail".</li>
-            <li><strong>Ego</strong> (Eugeo) is from the anime "Sword Art Online".</li>
-            <li><strong>Keela</strong> (Killua Zoldyck), <strong>Gong</strong> (Gon Freecss) are from the anime "Hunter x Hunter".</li>
-            <li><strong>Yujay</strong> (Yuji Itadori), <strong>Mahaga</strong> (Mahoraga) are from the anime "Jujutsu Kaisen".</li>
-            <li><strong>Rimo</strong> (Rimuru Tempest) is from the anime "Tensei Shitara Slime Datta Ken".</li>
-            <li><strong>Sinju</strong> (Shinra Kusakabe) is from the anime "Fire Force".</li>
-            <li><strong>Astro</strong> (Asta) is from the anime "Black Clover".</li>
-            <li><strong>Subra</strong> (Saber) is from the anime "Fate".</li>
-            <li><strong>Meggy</strong> (Megumin) is from the anime "KonoSuba".</li>
-            <li><strong>Toasta</strong> (Tōshirō Hitsugaya) is from the anime "Bleach".</li>
-            <li><strong>Seidon</strong> (Poseidon) is from the anime "Record of Ragnarok".</li>
-            <li><strong>Powa</strong> (Power) is from the anime "Chainsaw Man".</li>
-            <li><strong>Jojo</strong> (JoJo) is from the anime "JoJo's Bizarre Adventure".</li>
-            <li><strong>Ana</strong> (Anya Forger) is from the anime "Spy x Family".</li>
-            <li><strong>Demon Galo</strong> (Garou) is from the anime "One Punch Man".</li>
-            <li><strong>Etzy</strong> (Esdeath) is from the anime "Akame ga Kill!".</li>
+            <li><strong>Gogo</strong> (Goku)</li>
+            <li><strong>Veggies</strong> (Vegeta)</li>
+            <li><strong>Brobro</strong> (Broly)</li>
+            <li><strong>Baybe</strong> (??)</li>
+            <li><strong>Super Baybe</strong> (SS Goku)</li>
+        </ul>
+
+        <h2>Naruto</h2>
+        <ul>
+            <li><strong>Sausage</strong> (Sasuke)</li>
+            <li><strong>Naru</strong> (Naruto)</li>
+            <li><strong>Nejo</strong> (Neji)</li>
+            <li><strong>Saka</strong> (Sakura)</li>
+            <li><strong>Mino</strong> (Minato)</li>
+            <li><strong>Lee</strong> (Rock Lee)</li>
+            <li><strong>Martha</strong> (Madara)</li>
+        </ul>
+
+        <h2>Other Anime</h2>
+        <ul>
+            <li><strong>Nasa</strong> (Natsu Dragneel) – <em>Fairy Tail</em></li>
+            <li><strong>Ego</strong> (Eugeo) – <em>Sword Art Online</em></li>
+            <li><strong>Keela</strong> (Killua Zoldyck) – <em>Hunter x Hunter</em></li>
+            <li><strong>Gong</strong> (Gon Freecss) – <em>Hunter x Hunter</em></li>
+            <li><strong>Yujay</strong> (Yuji Itadori) – <em>Jujutsu Kaisen</em></li>
+            <li><strong>Mahaga</strong> (Mahoraga) – <em>Jujutsu Kaisen</em></li>
+            <li><strong>Rimo</strong> (Rimuru Tempest) – <em>That Time I Got Reincarnated as a Slime</em></li>
+            <li><strong>Sinju</strong> (Shinra Kusakabe) – <em>Fire Force</em></li>
+            <li><strong>Astro</strong> (Asta) – <em>Black Clover</em></li>
+            <li><strong>Subra</strong> (Saber) – <em>Fate</em></li>
+            <li><strong>Meggy</strong> (Megumin) – <em>KonoSuba</em></li>
+            <li><strong>Toasta</strong> (Tōshirō Hitsugaya) – <em>Bleach</em></li>
+            <li><strong>Seidon</strong> (Poseidon) – <em>Record of Ragnarok</em></li>
+            <li><strong>Powa</strong> (Power) – <em>Chainsaw Man</em></li>
+            <li><strong>Jojo</strong> (JoJo) – <em>JoJo's Bizarre Adventure</em></li>
+            <li><strong>Ana</strong> (Anya Forger) – <em>Spy x Family</em></li>
+            <li><strong>Demon Galo</strong> (Garou) – <em>One Punch Man</em></li>
+            <li><strong>Etzy</strong> (Esdeath) – <em>Akame ga Kill!</em></li>
+        </ul>
+
+        <h2>Additional Features</h2>
+        <ul>
+            <li>🔹 **New abilities for certain characters**</li>
+            <li>🔹 **Balance adjustments to ensure fair gameplay**</li>
+            <li>🔹 **Bug fixes and improved game stability**</li>
         </ul>
     </div>
-    
+
 </body>
 </html>
