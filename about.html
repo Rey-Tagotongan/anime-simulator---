@@ -3,66 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About Us | Anime Community</title>
     <style>
-        body, h1, p {
-            margin: 0;
-            padding: 0;
-        }
-
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             text-align: center;
+            margin: 0;
             padding: 20px;
         }
 
         nav {
             background: #333;
-            padding: 10px 0;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 15px;
-            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
         }
 
         nav a:hover {
             background: #555;
         }
 
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h1 {
+            color: #222;
+            margin-bottom: 15px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta a {
+            display: inline-block;
+            background: #ff4500;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .cta a:hover {
+            background: #e03d00;
+        }
+
         @media (max-width: 600px) {
             nav {
-                display: flex;
                 flex-direction: column;
                 align-items: center;
             }
+
             nav a {
                 display: block;
                 width: 100%;
                 text-align: center;
+                padding: 10px;
             }
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        p {
-            font-size: x-large;
-            color: #666;
         }
     </style>
 </head>
@@ -78,7 +110,25 @@
 
     <div class="container">
         <h1>About Us</h1>
-        <p>Our mission is to understand, inform, entertain, and celebrate fans by building the best entertainment and gaming communities, content, services, and experiences.</p>
+
+        <h2>Who We Are</h2>
+        <p>We are a passionate community dedicated to anime, gaming, and entertainment. Whether you’re a casual viewer or a die-hard fan, we offer a space to connect, discuss, and celebrate everything anime-related.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to bring anime fans together through engaging content, lively discussions, and the latest news in the industry. We believe in creating a welcoming environment where everyone can share their love for anime, games, and pop culture.</p>
+
+        <h2>What We Offer</h2>
+        <p>✔ Latest anime news, reviews, and recommendations.<br>
+           ✔ A vibrant community to discuss your favorite series and characters.<br>
+           ✔ Events, fan theories, and exclusive content.<br>
+           ✔ A place to meet fellow anime enthusiasts from around the world.</p>
+
+        <h2>Join Us!</h2>
+        <p>Be part of our growing anime community. Stay updated, engage in discussions, and make new friends who share your passion for anime.</p>
+
+        <div class="cta">
+            <a href="./community.html">Join Our Community</a>
+        </div>
     </div>
     
 </body>
