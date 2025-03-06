@@ -3,70 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Simulator Fun</title>
+    <title>Anime Simulator Fun | Scamming Awareness</title>
     <style>
-
-        body, h1, h2, p, ul, li {
-            margin: 0;
-            padding: 0;
-        }
-
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             text-align: center;
+            margin: 0;
             padding: 20px;
         }
 
         nav {
             background: #333;
-            padding: 10px 0;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 15px;
-            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
         }
 
         nav a:hover {
             background: #555;
         }
 
-        @media (max-width: 600px) {
-            nav {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            nav a {
-                display: block;
-                width: 100%;
-                text-align: center;
-            }
-        }
-
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 30px auto;
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
 
-        h1, h2 {
-            color: #333;
+        h1 {
+            color: #222;
             margin-bottom: 15px;
+            font-size: 2rem;
             text-align: center;
         }
 
+        h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            border-bottom: 2px solid #ff4500;
+            padding-bottom: 5px;
+        }
+
         p {
-            color: #666;
-            line-height: 1.5;
-            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #444;
+            line-height: 1.6;
         }
 
         ul {
@@ -76,16 +72,36 @@
 
         li {
             background: #fff;
-            margin: 5px 0;
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+        }
+
+        li strong {
+            color: #e03d00;
+        }
+
+        .warning {
+            background: #ffdddd;
             padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            text-align: left;
+            border-left: 5px solid #ff4500;
+            margin: 15px 0;
+            font-weight: bold;
         }
 
         @media (max-width: 600px) {
-            li {
-                font-size: 14px;
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 10px;
             }
         }
     </style>
@@ -103,20 +119,46 @@
     </nav>
 
     <div class="container">
-        <h2>Scamming</h2>
-        <hr>
-        <p>Scamming is the process of a person making fraudulent claims or offers to trade champions and not holding up their end of the deal. This is commonly done as an easy way to acquire champions.</p>
+        <h2>Beware of Scamming</h2>
+        <p>Scamming is when a player deceives others by making false promises in trades or requests, usually to obtain champions unfairly. Protect yourself and others by understanding the common types of scams and how to avoid them.</p>
 
+        <div class="warning">⚠️ **Never trust players who ask for items first! Always use safe trading practices.**</div>
+
+        <h2>Common Types of Scams</h2>
         <ul>
-            <li><strong>Do not scam others.</strong> There are several types of scams:</li>
-            <li><strong>Trade Scam:</strong> The scammer asks the victim to trade their offer first, then takes the item and leaves without completing the trade.</li>
-            <li><strong>"Can I Borrow?" Scam:</strong> The scammer asks to "test" the champion and then runs away with it.</li>
-            <li><strong>Friend Betrayal Scam:</strong> Someone pretends to be your friend to gain your trust, then asks to "test" your champion and disappears with it.</li>
-            <li><strong>Potential Scams:</strong> Any trade that cannot be completed immediately, such as gifting shards/yen, helping with boss powers, finding devil fruits, or training others, may be considered crosstrading, which can lead to a ban.</li>
-            <li><strong>Inventory Limitations:</strong> Ensure you have enough space for trades, as limited inventory can cause failed trades.</li>
-            <li><strong>Fighting Pass Champions Are Non-Tradeable:</strong> This includes Kirito, Asuna, Gon, Meliodas, Shinra, Mihawk, Escanor, Zenitsu, Bakugo, Rock Lee, Marco, and Ochaco.</li>
-            <li><strong>Do not beg for champions.</strong> There are many ways to obtain them, such as trading, grinding chikara, or using codes. Begging is considered similar to scamming.</li>
+            <li><strong>1. Trade Scam:</strong> The scammer convinces the victim to send their item first but does not return the agreed trade.</li>
+            <li><strong>2. "Can I Borrow?" Scam:</strong> The scammer asks to test or borrow a champion and never returns it.</li>
+            <li><strong>3. Fake Friend Scam:</strong> Someone pretends to be your friend, gains your trust, then asks for a trade and disappears.</li>
+            <li><strong>4. Fake Middleman Scam:</strong> A scammer pretends to be a trusted middleman but takes the items and runs.</li>
+            <li><strong>5. Impersonation Scam:</strong> The scammer pretends to be a mod or admin, claiming they can help you trade but steals your items.</li>
+            <li><strong>6. “Limited Time Deal” Scam:</strong> The scammer pressures you to trade quickly, claiming the offer is only available for a short time.</li>
+            <li><strong>7. External Trade Scam:</strong> Scammers ask you to trade outside the game (e.g., for Robux or real money), which is risky and may get you banned.</li>
         </ul>
+
+        <h2>How to Stay Safe</h2>
+        <ul>
+            <li>✅ **Only trade through the in-game trading system.**</li>
+            <li>✅ **Always verify who you are trading with.**</li>
+            <li>✅ **Do not trust random trade requests from strangers.**</li>
+            <li>✅ **Be skeptical of deals that seem too good to be true.**</li>
+            <li>✅ **Use screenshots to report scammers to moderators.**</li>
+        </ul>
+
+        <h2>Important Rules</h2>
+        <ul>
+            <li><strong>Inventory Limitations:</strong> Ensure you have enough space before trading, as failed trades due to a full inventory are not refunded.</li>
+            <li><strong>Fighting Pass Champions Are Non-Tradeable:</strong> The following champions cannot be traded: Kirito, Asuna, Gon, Meliodas, Shinra, Mihawk, Escanor, Zenitsu, Bakugo, Rock Lee, Marco, and Ochaco.</li>
+            <li><strong>Do Not Beg for Champions:</strong> There are legitimate ways to obtain them, such as grinding chikara, using codes, or trading fairly. Begging is considered disruptive and may lead to penalties.</li>
+        </ul>
+
+        <h2>What to Do If You Get Scammed</h2>
+        <ul>
+            <li>📸 Take screenshots of your conversation and the scam.</li>
+            <li>📜 Report the scammer to a moderator with proof.</li>
+            <li>🚫 Avoid trading with that user again and warn others.</li>
+        </ul>
+
+        <div class="warning">❌ **Remember: Moderators will NEVER ask for your champions or items! Report impersonators immediately.**</div>
     </div>
 
 </body>
